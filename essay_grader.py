@@ -60,6 +60,7 @@ class EssayGrader:
             ],
             max_completion_tokens=4000,
             response_format={"type": "json_object"},
+            temperature=0.3,
         )
 
         self.feedback: Dict[str, Dict[str, str]] = json.loads(
